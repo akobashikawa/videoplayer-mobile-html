@@ -180,12 +180,22 @@ table .number {
 /* CATALOG */
 
 .video-container {
-  background: #000;
-  width: 100%;
 }
 
-.video-container video {
-  width: 100%;
+.video-container .video-js {
+}
+
+.video-js .vjs-control-bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.video-js .vjs-progress-control {
+}
+
+.video-container .video-js video {
 }
 
 .logo-container {
@@ -510,13 +520,13 @@ table .number {
   width: calc(33.333333% - 1px);
 }
 
-.billing-address-same-container {
+.billing-address-checkbox-container {
   width: 100%;
   text-align: center;
-  margin: 50px 0 25px;
+  margin: 25px 0 25px;
 }
 
-.billing-address-same-container label {
+.billing-address-checkbox-container label {
   display: inline-block;
 }
 
