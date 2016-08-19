@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VCO Catalog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+	</style>
+</head>
+
+<body>
+
+	<div class="page checkout">
+
+		<div class="logo-container">
+			<img class="logo" src="img/vco-logo.png" alt="VideoCheckout" />
+		</div>
+
+		<div class="billing-information">
+			<h2 class="subtitle"> Billing information </h2>
+
+			<form class="form-information form-billing-information">
+
+				<input type="text" class="first-name" placeholder="First Name*" required>
+				<input type="text" class="last-name" placeholder="Last Name*" required>
+				<input type="text" class="card-number" placeholder="Card Number*" required>
+
+				<select class="month">
+					<option value="">Month*</option>
+					<option value="01">January</option>
+					<option value="02">February</option>
+					<option value="03">March</option>
+					<option value="04">April</option>
+					<option value="05">May</option>
+					<option value="06">June</option>
+					<option value="07">July</option>
+					<option value="08">August</option>
+					<option value="09">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+
+				<select class="year">
+					<option value="">Year*</option>
+					<option value="2016">2016</option>
+					<option value="2017">2017</option>
+					<option value="2018">2018</option>
+					<option value="2019">2019</option>
+					<option value="2020">2020</option>
+				</select>
+				<input type="text" class="cvv" placeholder="CVV*">
+
+				<div class="billing-address-same-container">
+					<label>
+						<input type="checkbox" class="billing-address-same" value="yes">
+						My shipping and billing address are the same
+					</label>
+				</div>
+
+				<div class="address-info">
+					<input type="text" class="address" placeholder="Address*" required>
+					<input type="text" class="apt-suite" placeholder="Apt/Suite">
+					<input type="text" class="country" placeholder="Country*">
+					<input type="text" class="state" placeholder="State*">
+					<input type="text" class="zip" placeholder="Zip*">
+				</div>
+
+			</form>
+
+			<table class="table-summary">
+				<tr>
+					<th class="total-label text-right"> Total: </th>
+					<td class="total number"> $100.00 </td>
+				</tr>
+				<tr>
+					<th class="tax-label text-right"> Tax: </th>
+					<td class="tax number"> $0.00 </td>
+				</tr>
+				<tr>
+					<th class="shipping-label text-right"> Standard Shipping: </th>
+					<td class="shipping number"> $3.99 </td>
+				</tr>
+			</table>
+		</div>
+
+
+		<div class="footer-buttons">
+			<a href="order.html" class="btn fullwidth-btn buy-btn">
+				<span class="label-btn">BUY</span>
+				<span class="total">$103.99</span>
+			</a>
+		</div>
+
+		<div class="design" style="background-image: url('img/ui-design-panel-3.png'); display: none;"></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>

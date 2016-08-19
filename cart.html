@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>VCO Catalog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<style>
+	</style>
+</head>
+
+<body>
+
+	<div class="page cart">
+
+		<div class="logo-container">
+			<img class="logo" src="img/vco-logo.png" alt="VideoCheckout" />
+		</div>
+
+		<div class="cart-carousel-container"></div>
+
+		<div class="shipping-information">
+			<h2 class="subtitle">Shipping Information</h2>
+
+			<form class="form-information form-shipping-information">
+				<div class="personal-info">
+					<input type="text" class="first-name" placeholder="First Name*" required>
+					<input type="text" class="last-name" placeholder="Last Name*" required>
+					<input type="email" class="email" placeholder="Email*" required>
+				</div>
+				<div class="address-info">
+					<input type="text" class="address" placeholder="Address*" required>
+					<input type="text" class="apt-suite" placeholder="Apt/Suite">
+					<input type="text" class="country" placeholder="Country*">
+					<input type="text" class="state" placeholder="State*">
+					<input type="text" class="zip" placeholder="Zip*">
+				</div>
+			</form>
+
+			<div class="shipping-options">
+				<div class="shipping-option selected">
+					<div class="shipping-option-name">Standard</div>
+					<div class="shipping-option-price">$3.99</div>
+					<div class="shipping-option-time">3-5 days</div>
+					<a href="#" class="btn selected-btn">Selected</a>
+				</div>
+				<div class="shipping-option">
+					<div class="shipping-option-name">Express</div>
+					<div class="shipping-option-price">$6.99</div>
+					<div class="shipping-option-time">2-3 days</div>
+					<a href="#" class="btn selected-btn">Select</a>
+				</div>
+				<div class="shipping-option">
+					<div class="shipping-option-name">Over-night</div>
+					<div class="shipping-option-price">$8.99</div>
+					<div class="shipping-option-time">1-2 days</div>
+					<a href="#" class="btn selected-btn">Select</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer-buttons">
+			<a href="index.html" class="btn medium-btn go-to-catalog-btn">
+				<i class="fa fa-arrow-left"></i>
+			</a>
+			<a href="checkout.html" class="btn large-btn go-to-checkout-btn">
+				Checkout <i class="fa fa-arrow-right"></i>
+			</a>
+		</div>
+
+		<div class="design" style="background-image: url('img/ui-design-panel-2.png'); display: none;"></div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+</html>
