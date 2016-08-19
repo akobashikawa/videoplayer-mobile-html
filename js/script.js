@@ -1,12 +1,21 @@
 $(document).on('ready', function() {
 
-  $('.carousel').slick({
+  $('.catalog-carousel-container .carousel').slick({
+    arrows: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 3,
-    nextArrow: '<i class="next-arrow fa fa-chevron-right fa-2x"></i>',
-    prevArrow: '<i class="prev-arrow fa fa-chevron-left fa-2x"></i>'
+    slidesToScroll: 3
+  });
+
+  $('.cart-carousel-container .carousel').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   });
 
 });
