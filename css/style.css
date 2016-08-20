@@ -221,16 +221,7 @@ table .number {
   width: 50px;
 }
 
-.catalog-carousel-container .prev-arrow {
-  top: 35px;
-}
-
-.catalog-carousel-container .next-arrow {
-  top: 35px;
-}
-
 .catalog-carousel-container .carousel-item {
-  height: 100px;
 }
 
 .catalog-carousel-container .carousel-item img {
@@ -334,6 +325,8 @@ table .number {
 
 .cart-carousel-container .carousel-item {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .cart-item-image-and-quantity {
