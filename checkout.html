@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>VCO Catalog</title>
+	<title>Checkout</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
@@ -19,11 +19,22 @@
 	<div class="page checkout">
 
 		<div class="logo-container">
-			<img class="logo" src="img/vco-logo.png" alt="VideoCheckout" />
+			<a href="cart.html">
+				<img class="logo" src="img/vco-logo.png" alt="VideoCheckout" />
+			</a>
 		</div>
 
+
 		<div class="billing-information">
-			<h2 class="subtitle"> Billing information </h2>
+			<div class="page-header checkout-header">
+				<div class="page-header-title checkout-header-title">
+					<i class="fa fa-dollar fa-lg"></i>
+					Payment
+				</div>
+				<div class="page-header-subtitle checkout-header-cards-accepted">
+					<img src="img/creditcards-accepted.gif" alt="credit cards accepted">
+				</div>
+			</div>
 
 			<form class="form-information form-billing-information">
 
@@ -93,8 +104,15 @@
 
 		<div class="footer-buttons">
 			<a href="order.html" class="btn fullwidth-btn buy-btn">
+				<img class="verisign-logo" src="img/verisign.png" alt="Verisign Secured">
 				<span class="label-btn">BUY</span>
 				<span class="total">$103.99</span>
+			</a>
+		</div>
+
+		<div class="footer-buttons" style="opacity:0.2;">
+			<a href="order-error.html" class="btn fullwidth-btn buy-btn">
+				<span class="label-btn">ORDER ERROR</span>
 			</a>
 		</div>
 

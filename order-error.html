@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Order</title>
+	<title>Order Error</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
@@ -27,15 +27,19 @@
 		<div class="order-info">
 
 			<p class="order-result">
-				Success!
+				Transaction Failed
+				<div class="order-big order-big-ko">
+					<i class="fa fa-remove"></i>
+				</div>
 			</p>
-			<div class="order-big order-big-ok">
-				<i class="fa fa-check"></i>
+			<div class="order-message">
+				<p>
+					We are sorry, your card was not authorized.
+				</p>
+				<p>
+					Please retry!
+				</p>
 			</div>
-			<p class="order-number"> Order # 1349848694505 </p>
-			<p class="order-message">
-				Your order is being processed and an email confirmation will be sent to your shortly
-			</p>
 
 			<div class="order-summary">
 
@@ -89,9 +93,15 @@
 				</table>
 			</div>
 
+			<div class="footer-buttons">
+				<a href="checkout.html" class="btn fullwidth-btn retry-btn">
+					<i class="fa fa-arrow-left"></i>
+					<span class="label-btn">RETRY</span>
+				</a>
+			</div>
+
 		</div>
 
-		<div class="design" style="background-image: url('img/ui-design-panel-4.png'); display: none;"></div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

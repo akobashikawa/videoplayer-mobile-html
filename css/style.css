@@ -47,6 +47,17 @@ h2.subtitle {
   background-repeat: no-repeat;
 }
 
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.page-header-title .fa {
+  color: #3c5b9b;
+  margin-right: 5px;
+}
+
 .footer-buttons {
   display: flex;
   flex-direction: row;
@@ -78,7 +89,7 @@ h2.subtitle {
 }
 
 .large-btn {
-  background: #61b244;
+  background: #f35935;
   width: 66%;
   font-size: 30px;
   font-size: 3.0rem;
@@ -86,7 +97,7 @@ h2.subtitle {
 }
 
 .fullwidth-btn {
-  background: #61b244;
+  background: #f35935;
   width: 100%;
   font-size: 30px;
   font-size: 3.0rem;
@@ -145,35 +156,36 @@ table .number {
   font-size: 1.6rem;
   line-height: 2.4em;
 
-  color: white;
-  background-color: #3c5b9b;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
+  color: black;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 
   box-sizing: border-box;
   padding: 0 10px;
 }
 
 .form-information input:focus,
-.form-information select:focus {  color: #3c5b9b;
-  background-color: white;
+.form-information select:focus {
+  color: white;
+  background-color: #3c5b9b;
   outline: none;
 }
 
 .form-information select {
   border: none;
   box-shadow: none;
-  color: white;
-  background-color: #3c5b9b;
+  background-color: white;
+  color: black;
   background-image: none;
   -webkit-appearance; none;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
 .form-information select:focus {
-  color: #3c5b9b;
-  background-color: white;
+  background-color: #3c5b9b;
+  color: white;
   outline: none;
 }
 
@@ -221,8 +233,20 @@ table .number {
   width: 50px;
 }
 
-.catalog-carousel-container .carousel-item {
+.catalog-header-title .fa {
+  /* horiznotal flip */
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
+
+.catalog-carousel-container {
+  margin-top: 20px;
+}
+
+.catalog-carousel-container .carousel-item { }
 
 .catalog-carousel-container .carousel-item img {
   display: inline-block;
@@ -282,9 +306,10 @@ table .number {
 }
 
 .catalog-item-options select {
-  width: calc(100% - 4rem);
-  font-size: 18px;
-  font-size: 1.8rem;
+  width: 100%;
+  font-size: 20px;
+  font-size: 2.0rem;
+  padding: 8px 0;
   border: none;
   box-shadow: none;
   background: white;
@@ -316,7 +341,20 @@ table .number {
 
 /* CART */
 
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.cart-header-title .fa {
+  color: #3c5b9b;
+}
+
+.cart-header-counter { }
+
 .cart-carousel-container {
+  margin-top: 20px;
 }
 
 .cart-carousel-container .carousel-item {
@@ -465,13 +503,18 @@ table .number {
   background-color: #ddd;
 }
 
-.billing-information .subtitle {
-  margin: 26px 0 5px;
+.checkout-header-cards-accepted {
+  width: 100px;
+}
+
+.checkout-header-cards-accepted img {
+  width: 100%;
 }
 
 .form-billing-information {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 20px;
 }
 
 .form-billing-information .first-name,
@@ -534,6 +577,13 @@ table .number {
   position: relative;
 }
 
+.verisign-logo {
+  height: 70px;
+  position: absolute;
+  top: -12px;
+  left: 12px;
+}
+
 .buy-btn .total {
   position: absolute;
   right: 0.5em;
@@ -548,12 +598,26 @@ table .number {
   background: #ddd;
 }
 
-.order-thank-you {
+.order-result {
   font-size: 32px;
   font-size: 3.2rem;
   text-align: center;
   color: #3c5b9b;
   margin: 39px 0 0;
+}
+
+.order-big {
+  font-size: 50px;
+  font-size: 5.0rem;
+  text-align: center;
+}
+
+.order-big-ok {
+  color: green;
+}
+
+.order-big-ko {
+  color: red;
 }
 
 .order-number {
@@ -563,6 +627,11 @@ table .number {
 .order-message {
   line-height: 1em;
   margin-top: 20px;
+  text-align: center;
+}
+
+.order-summary {
+  margin-bottom: 20px;
 }
 
 .subtitle.order-summary-title {
@@ -628,4 +697,8 @@ table .number {
   font-size: 20px;
   font-size: 2.0rem;
   font-weight: bold;
+}
+
+.retry-btn {
+  background-color: #3c5b9b;
 }
