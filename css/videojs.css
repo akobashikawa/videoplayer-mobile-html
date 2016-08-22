@@ -1,0 +1,68 @@
+ub.vjs-default-skin {
+  _color: lime;
+}
+.vjs-default-skin .vjs-progress-control {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: auto;
+  font-size: 1rem;
+  height: 1rem;
+  /* Set above the rest of the controls. */
+  top: -0.3rem;
+  /* Shrink the bar slower than it grows. */
+  /* transition */
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.vjs-default-skin:hover .vjs-progress-control {
+  font-size: 1rem;
+  /* Even though we're not changing the top/height, we need to include them in
+      the transition so they're handled correctly. */
+  /* transition */
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.video-js .vjs-slider {
+  margin: 0;
+}
+
+.vjs-default-skin .vjs-time-controls {
+  font-size: 1em;
+  /* Align vertically by making the line height the same as the control bar */
+  line-height: 3em;
+}
+.vjs-default-skin .vjs-current-time {
+  display: block;
+  float: left;
+}
+.vjs-default-skin .vjs-duration {
+  float: left;
+}
+/* Remaining time is in the HTML, but not included in default design */
+.vjs-default-skin .vjs-remaining-time {
+  display: none;
+  float: left;
+}
+.vjs-time-divider {
+  float: left;
+  line-height: 3em;
+}
+
+.vjs-default-skin .vjs-fullscreen-control {
+  width: 3.8em;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+.vjs-default-skin .vjs-fullscreen-control:before {
+  content: @fullscreen-enter-icon;
+}
+/* Switch to the exit icon when the player is in fullscreen */
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
+  content: @fullscreen-exit-icon;
+}
